@@ -1,0 +1,5 @@
+<launch>
+    <node name="demo" pkg="pseudo_structure" type="main.py" output="screen">
+    <rosparam command="load" file="$(find pseudo_structure)/config/pseudo_structure.yaml" /> <!--Load parameters from config files-->
+    </node>
+</launch>

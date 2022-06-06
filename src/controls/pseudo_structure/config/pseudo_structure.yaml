@@ -1,0 +1,3 @@
+publisher_topic_name: /perception/lidar/range_bearings
+
+messageData: "Hello There! "
