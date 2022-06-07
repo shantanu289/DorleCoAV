@@ -1,0 +1,1 @@
+/home/sahil/DorleCo/devel/.private/pseudo_structure/share/pseudo_structure/cmake/pseudo_structureConfig.cmake

@@ -12,15 +12,15 @@ class Sample_publisher(object):
     def publishToTopics(self):
         rospy.loginfo("Published to topics")
         self.messagePublisher = rospy.Publisher(
-            "/demo_message", String, queue_size=1)
+            self.pub_topic_name, String, queue_size=1)
         rospy.loginfo("Done Publish")
 
     def loadParameters(self):
         rospy.loginfo("loading handle parameters")
 
         self.pub_topic_name = rospy.get_param(
-            "pseudo_structure/publisher_topic_name", "/demo_message/config404")
+            "pseudo_structure/publisher_topic_name", "/demo_message")
 
         self.message_tobe_sent = rospy.get_param(
-            "pseudo_structure/messageData", "Config404! ")
+            "pseudo_structure/messageData", "Hello There! ")
 
