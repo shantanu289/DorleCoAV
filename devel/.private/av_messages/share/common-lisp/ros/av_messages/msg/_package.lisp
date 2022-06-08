@@ -1,0 +1,31 @@
+(cl:defpackage av_messages-msg
+  (:use )
+  (:export
+   "<CARSTATE>"
+   "CARSTATE"
+   "<CARSTATEDT>"
+   "CARSTATEDT"
+   "<CONTROLCOMMAND>"
+   "CONTROLCOMMAND"
+   "<DESTINATION>"
+   "DESTINATION"
+   "<GLOBALPLAN>"
+   "GLOBALPLAN"
+   "<LANEDETECTIONS>"
+   "LANEDETECTIONS"
+   "<LANES>"
+   "LANES"
+   "<LOCALPLAN>"
+   "LOCALPLAN"
+   "<MAP>"
+   "MAP"
+   "<OBJECT>"
+   "OBJECT"
+   "<OBJECTS>"
+   "OBJECTS"
+   "<VELACCEL>"
+   "VELACCEL"
+   "<WAYPOINT>"
+   "WAYPOINT"
+  ))
+
