@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_carState.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_carStateDT.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_controlCommand.py"
+  "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_depthandimage.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_destination.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_globalPlan.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_laneDetections.py"

@@ -1,6 +1,7 @@
 from ._carState import *
 from ._carStateDT import *
 from ._controlCommand import *
+from ._depthandimage import *
 from ._destination import *
 from ._globalPlan import *
 from ._laneDetections import *

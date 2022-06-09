@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sahil/DorleCo/build/av_messages
 include CMakeFiles/_av_messages_generate_messages_check_deps_trafficLights.dir/progress.make
 
 CMakeFiles/_av_messages_generate_messages_check_deps_trafficLights:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py av_messages /home/sahil/DorleCo/src/av_messages/msg/trafficLights.msg std_msgs/String:geometry_msgs/Point:std_msgs/Int16
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py av_messages /home/sahil/DorleCo/src/av_messages/msg/trafficLights.msg std_msgs/Int16:std_msgs/String:geometry_msgs/Point
 
 _av_messages_generate_messages_check_deps_trafficLights: CMakeFiles/_av_messages_generate_messages_check_deps_trafficLights
 _av_messages_generate_messages_check_deps_trafficLights: CMakeFiles/_av_messages_generate_messages_check_deps_trafficLights.dir/build.make

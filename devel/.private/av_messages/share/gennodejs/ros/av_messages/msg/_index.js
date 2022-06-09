@@ -2,6 +2,7 @@
 "use strict";
 
 let wayPoint = require('./wayPoint.js');
+let depthandimage = require('./depthandimage.js');
 let localPlan = require('./localPlan.js');
 let map = require('./map.js');
 let destination = require('./destination.js');
@@ -18,6 +19,7 @@ let laneDetections = require('./laneDetections.js');
 
 module.exports = {
   wayPoint: wayPoint,
+  depthandimage: depthandimage,
   localPlan: localPlan,
   map: map,
   destination: destination,

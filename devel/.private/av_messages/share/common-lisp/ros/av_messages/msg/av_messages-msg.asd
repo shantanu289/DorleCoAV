@@ -3,6 +3,7 @@
 
 (defsystem "av_messages-msg"
   :depends-on (:roslisp-msg-protocol :roslisp-utils :geometry_msgs-msg
+               :sensor_msgs-msg
                :std_msgs-msg
 )
   :components ((:file "_package")
@@ -12,6 +13,8 @@
     (:file "_package_carStateDT" :depends-on ("_package"))
     (:file "controlCommand" :depends-on ("_package_controlCommand"))
     (:file "_package_controlCommand" :depends-on ("_package"))
+    (:file "depthandimage" :depends-on ("_package_depthandimage"))
+    (:file "_package_depthandimage" :depends-on ("_package"))
     (:file "destination" :depends-on ("_package_destination"))
     (:file "_package_destination" :depends-on ("_package"))
     (:file "globalPlan" :depends-on ("_package_globalPlan"))

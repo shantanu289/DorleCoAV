@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   roscpp
   rospy
+  sensor_msgs
   geometry_msgs
   nav_msgs
   )
@@ -55,6 +56,7 @@ add_message_files(  # Tell catkin which custom message files to include
 carState.msg
 carStateDT.msg
 controlCommand.msg
+depthandimage.msg
 destination.msg
 globalPlan.msg
 laneDetections.msg
@@ -71,6 +73,7 @@ wayPoint.msg
 generate_messages(
   DEPENDENCIES
   std_msgs
+  sensor_msgs
   geometry_msgs
   nav_msgs
 )
@@ -78,6 +81,7 @@ generate_messages(
 ## Declare a catkin package
 catkin_package(CATKIN_DEPENDS
   message_runtime
+  sensor_msgs
   std_msgs
   geometry_msgs
 )
@@ -85,7 +89,7 @@ catkin_package(CATKIN_DEPENDS
 
 
 catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs nav_msgs # Needed to generate custom messages
+  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs nav_msgs sensor_msgs # Needed to generate custom messages
 )
 include_directories(
   # include

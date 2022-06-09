@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/carState.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/carStateDT.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/controlCommand.lisp"
+  "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/depthandimage.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/destination.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/laneDetections.lisp"

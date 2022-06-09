@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/carState.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/carStateDT.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/controlCommand.l"
+  "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/depthandimage.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/destination.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/globalPlan.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/laneDetections.l"

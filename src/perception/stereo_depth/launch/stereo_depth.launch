@@ -1,0 +1,4 @@
+<launch>
+    <node name="depth_image_generator" pkg="stereo_depth" type="main.py" output="screen">
+    </node>
+</launch>

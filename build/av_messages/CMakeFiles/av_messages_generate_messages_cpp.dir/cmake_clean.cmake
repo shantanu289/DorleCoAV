@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/carState.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/carStateDT.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/controlCommand.h"
+  "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/depthandimage.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/destination.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/globalPlan.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/laneDetections.h"

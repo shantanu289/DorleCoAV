@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/sahil/DorleCo/devel/.private/stereo_depth:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/sahil/DorleCo/devel/.private/stereo_depth/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/sahil/DorleCo/devel/.private/stereo_depth/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/sahil/DorleCo/build/stereo_depth'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/sahil/DorleCo/devel/.private/stereo_depth/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/sahil/DorleCo/src/perception/stereo_depth:$ROS_PACKAGE_PATH"

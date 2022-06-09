@@ -15,6 +15,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <std_msgs/Header.h>
 
 namespace av_messages
 {
@@ -24,18 +25,23 @@ struct controlCommand_
   typedef controlCommand_<ContainerAllocator> Type;
 
   controlCommand_()
-    : throttle(0.0)
+    : header()
+    , throttle(0.0)
     , brake(0.0)
     , steering(0.0)  {
     }
   controlCommand_(const ContainerAllocator& _alloc)
-    : throttle(0.0)
+    : header(_alloc)
+    , throttle(0.0)
     , brake(0.0)
     , steering(0.0)  {
   (void)_alloc;
     }
 
 
+
+   typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
+  _header_type header;
 
    typedef float _throttle_type;
   _throttle_type throttle;
@@ -75,7 +81,8 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::av_messages::controlCommand_<ContainerAllocator1> & lhs, const ::av_messages::controlCommand_<ContainerAllocator2> & rhs)
 {
-  return lhs.throttle == rhs.throttle &&
+  return lhs.header == rhs.header &&
+    lhs.throttle == rhs.throttle &&
     lhs.brake == rhs.brake &&
     lhs.steering == rhs.steering;
 }
@@ -110,22 +117,22 @@ struct IsMessage< ::av_messages::controlCommand_<ContainerAllocator> const>
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::av_messages::controlCommand_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::av_messages::controlCommand_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::av_messages::controlCommand_<ContainerAllocator> >
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::av_messages::controlCommand_<ContainerAllocator> const>
-  : FalseType
+  : TrueType
   { };
 
 
@@ -134,12 +141,12 @@ struct MD5Sum< ::av_messages::controlCommand_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "3968da8b9a8303204ceef45dc1b7beb2";
+    return "664151a432ba94f1cd2f888544fc1623";
   }
 
   static const char* value(const ::av_messages::controlCommand_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x3968da8b9a830320ULL;
-  static const uint64_t static_value2 = 0x4ceef45dc1b7beb2ULL;
+  static const uint64_t static_value1 = 0x664151a432ba94f1ULL;
+  static const uint64_t static_value2 = 0xcd2f888544fc1623ULL;
 };
 
 template<class ContainerAllocator>
@@ -159,10 +166,27 @@ struct Definition< ::av_messages::controlCommand_<ContainerAllocator> >
   static const char* value()
   {
     return "# Message for final control commands\n"
+"std_msgs/Header header\n"
 "\n"
 "float32 throttle # 0.0 - 1.0 throttle range\n"
 "float32 brake # 0.0 - 1.0 brake range\n"
 "float32 steering # -angle to + angle range ## ANGLE TO BE DEFINED ACCORDING TO VEHICLE MODEL\n"
+"\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
 ;
   }
 
@@ -181,6 +205,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.header);
       stream.next(m.throttle);
       stream.next(m.brake);
       stream.next(m.steering);
@@ -202,6 +227,9 @@ struct Printer< ::av_messages::controlCommand_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::av_messages::controlCommand_<ContainerAllocator>& v)
   {
+    s << indent << "header: ";
+    s << std::endl;
+    Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "throttle: ";
     Printer<float>::stream(s, indent + "  ", v.throttle);
     s << indent << "brake: ";

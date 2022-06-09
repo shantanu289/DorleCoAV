@@ -133,6 +133,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/sahil/DorleCo/src/av_messages/msg/carState.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/carStateDT.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/controlCommand.msg"
+    "/home/sahil/DorleCo/src/av_messages/msg/depthandimage.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/destination.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/globalPlan.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/laneDetections.msg"

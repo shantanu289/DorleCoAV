@@ -10,5 +10,6 @@
 (ros::load-ros-package "nav_msgs")
 (ros::load-ros-package "roscpp")
 (ros::load-ros-package "rosgraph_msgs")
+(ros::load-ros-package "sensor_msgs")
 (ros::load-ros-package "std_msgs")
 (ros::load-ros-package "av_messages")
