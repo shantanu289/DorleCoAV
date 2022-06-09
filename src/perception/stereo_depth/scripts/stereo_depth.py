@@ -26,7 +26,7 @@ class DepthGenerator(object):
         self.pub_topic_name = rospy.get_param(
             "stereo_depth/publisher_topic_name", "/camera/imagedata")
 
-    def getImagesFromCam():
+    def getImagesFromCam(self):
         '''
         insert the code to access the images from the oakd camera here
         initialise variables needed accordingly
@@ -34,15 +34,15 @@ class DepthGenerator(object):
         so as to sync everything
         '''
 
-    def computeDepth():
+    def computeDepth(self):
         '''
         insert the code to calculated depth from the obtained set of images
         initialise variables needed accordingly
         '''
 
-    def callPublisher():
+    def callPublisher(self):
         '''
-        insert the code to save the computed depth and obtained rgb image in the message
+        insert the code to save the computed depth and obtained rgb image (Reuben and Mayur)
         and call the publisher function
         to be filled by Sahil after the algorithm is added
         '''
