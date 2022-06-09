@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp"
+  "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/wayPoint.lisp"
   "CMakeFiles/av_messages_generate_messages_lisp"

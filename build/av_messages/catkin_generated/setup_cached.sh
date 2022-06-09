@@ -11,5 +11,6 @@ export CMAKE_PREFIX_PATH="/home/sahil/DorleCo/devel/.private/av_messages:$CMAKE_
 export LD_LIBRARY_PATH="/home/sahil/DorleCo/devel/.private/av_messages/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/sahil/DorleCo/devel/.private/av_messages/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/sahil/DorleCo/build/av_messages'
+export PYTHONPATH="/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/sahil/DorleCo/src/av_messages:$ROS_PACKAGE_PATH"

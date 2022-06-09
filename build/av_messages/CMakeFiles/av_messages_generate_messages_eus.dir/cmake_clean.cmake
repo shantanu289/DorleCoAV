@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/map.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/object.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/objects.l"
+  "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/trafficLights.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/velAccel.l"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/roseus/ros/av_messages/msg/wayPoint.l"
   "CMakeFiles/av_messages_generate_messages_eus"

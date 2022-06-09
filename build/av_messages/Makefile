@@ -100,18 +100,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,6 +111,18 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -179,6 +179,32 @@ av_messages_genpy: cmake_check_build_system
 av_messages_genpy/fast:
 	$(MAKE) -f CMakeFiles/av_messages_genpy.dir/build.make CMakeFiles/av_messages_genpy.dir/build
 .PHONY : av_messages_genpy/fast
+
+#=============================================================================
+# Target rules for targets named av_messages_generate_messages_py
+
+# Build rule for target.
+av_messages_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 av_messages_generate_messages_py
+.PHONY : av_messages_generate_messages_py
+
+# fast build rule for target.
+av_messages_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/av_messages_generate_messages_py.dir/build.make CMakeFiles/av_messages_generate_messages_py.dir/build
+.PHONY : av_messages_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_eus
+
+# Build rule for target.
+nav_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
@@ -387,19 +413,6 @@ clean_test_results: cmake_check_build_system
 clean_test_results/fast:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
 .PHONY : clean_test_results/fast
-
-#=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
-
-# Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -662,32 +675,6 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_eus
-
-# Build rule for target.
-nav_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named av_messages_generate_messages_py
-
-# Build rule for target.
-av_messages_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 av_messages_generate_messages_py
-.PHONY : av_messages_generate_messages_py
-
-# fast build rule for target.
-av_messages_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/av_messages_generate_messages_py.dir/build.make CMakeFiles/av_messages_generate_messages_py.dir/build
-.PHONY : av_messages_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -909,6 +896,45 @@ _av_messages_generate_messages_check_deps_localPlan/fast:
 .PHONY : _av_messages_generate_messages_check_deps_localPlan/fast
 
 #=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named _av_messages_generate_messages_check_deps_trafficLights
+
+# Build rule for target.
+_av_messages_generate_messages_check_deps_trafficLights: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _av_messages_generate_messages_check_deps_trafficLights
+.PHONY : _av_messages_generate_messages_check_deps_trafficLights
+
+# fast build rule for target.
+_av_messages_generate_messages_check_deps_trafficLights/fast:
+	$(MAKE) -f CMakeFiles/_av_messages_generate_messages_check_deps_trafficLights.dir/build.make CMakeFiles/_av_messages_generate_messages_check_deps_trafficLights.dir/build
+.PHONY : _av_messages_generate_messages_check_deps_trafficLights/fast
+
+#=============================================================================
+# Target rules for targets named av_messages_generate_messages_lisp
+
+# Build rule for target.
+av_messages_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 av_messages_generate_messages_lisp
+.PHONY : av_messages_generate_messages_lisp
+
+# fast build rule for target.
+av_messages_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/av_messages_generate_messages_lisp.dir/build.make CMakeFiles/av_messages_generate_messages_lisp.dir/build
+.PHONY : av_messages_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named _av_messages_generate_messages_check_deps_velAccel
 
 # Build rule for target.
@@ -933,19 +959,6 @@ av_messages_generate_messages_cpp: cmake_check_build_system
 av_messages_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/av_messages_generate_messages_cpp.dir/build.make CMakeFiles/av_messages_generate_messages_cpp.dir/build
 .PHONY : av_messages_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named av_messages_generate_messages_lisp
-
-# Build rule for target.
-av_messages_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 av_messages_generate_messages_lisp
-.PHONY : av_messages_generate_messages_lisp
-
-# fast build rule for target.
-av_messages_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/av_messages_generate_messages_lisp.dir/build.make CMakeFiles/av_messages_generate_messages_lisp.dir/build
-.PHONY : av_messages_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -1010,6 +1023,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... av_messages_genpy"
+	@echo "... install/local"
+	@echo "... av_messages_generate_messages_py"
+	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -1026,7 +1042,6 @@ help:
 	@echo "... _av_messages_generate_messages_check_deps_wayPoint"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... clean_test_results"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... install"
 	@echo "... tests"
 	@echo "... _av_messages_generate_messages_check_deps_destination"
@@ -1048,9 +1063,6 @@ help:
 	@echo "... run_tests"
 	@echo "... _av_messages_generate_messages_check_deps_map"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... install/local"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... av_messages_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... av_messages_geneus"
@@ -1069,9 +1081,11 @@ help:
 	@echo "... _av_messages_generate_messages_check_deps_laneDetections"
 	@echo "... test"
 	@echo "... _av_messages_generate_messages_check_deps_localPlan"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... _av_messages_generate_messages_check_deps_trafficLights"
+	@echo "... av_messages_generate_messages_lisp"
 	@echo "... _av_messages_generate_messages_check_deps_velAccel"
 	@echo "... av_messages_generate_messages_cpp"
-	@echo "... av_messages_generate_messages_lisp"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

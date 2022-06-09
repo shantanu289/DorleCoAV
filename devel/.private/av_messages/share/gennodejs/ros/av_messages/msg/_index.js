@@ -6,6 +6,7 @@ let localPlan = require('./localPlan.js');
 let map = require('./map.js');
 let destination = require('./destination.js');
 let objects = require('./objects.js');
+let trafficLights = require('./trafficLights.js');
 let controlCommand = require('./controlCommand.js');
 let lanes = require('./lanes.js');
 let velAccel = require('./velAccel.js');
@@ -21,6 +22,7 @@ module.exports = {
   map: map,
   destination: destination,
   objects: objects,
+  trafficLights: trafficLights,
   controlCommand: controlCommand,
   lanes: lanes,
   velAccel: velAccel,

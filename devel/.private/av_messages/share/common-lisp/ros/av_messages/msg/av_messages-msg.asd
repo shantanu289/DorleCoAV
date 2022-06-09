@@ -28,6 +28,8 @@
     (:file "_package_object" :depends-on ("_package"))
     (:file "objects" :depends-on ("_package_objects"))
     (:file "_package_objects" :depends-on ("_package"))
+    (:file "trafficLights" :depends-on ("_package_trafficLights"))
+    (:file "_package_trafficLights" :depends-on ("_package"))
     (:file "velAccel" :depends-on ("_package_velAccel"))
     (:file "_package_velAccel" :depends-on ("_package"))
     (:file "wayPoint" :depends-on ("_package_wayPoint"))

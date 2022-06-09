@@ -23,6 +23,8 @@
    "OBJECT"
    "<OBJECTS>"
    "OBJECTS"
+   "<TRAFFICLIGHTS>"
+   "TRAFFICLIGHTS"
    "<VELACCEL>"
    "VELACCEL"
    "<WAYPOINT>"

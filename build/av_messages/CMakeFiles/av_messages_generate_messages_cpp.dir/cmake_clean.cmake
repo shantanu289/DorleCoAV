@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/map.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/object.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/objects.h"
+  "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/trafficLights.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/velAccel.h"
   "/home/sahil/DorleCo/devel/.private/av_messages/include/av_messages/wayPoint.h"
   "CMakeFiles/av_messages_generate_messages_cpp"

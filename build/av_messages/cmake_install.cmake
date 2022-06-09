@@ -141,6 +141,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/sahil/DorleCo/src/av_messages/msg/map.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/object.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/objects.msg"
+    "/home/sahil/DorleCo/src/av_messages/msg/trafficLights.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/velAccel.msg"
     "/home/sahil/DorleCo/src/av_messages/msg/wayPoint.msg"
     )

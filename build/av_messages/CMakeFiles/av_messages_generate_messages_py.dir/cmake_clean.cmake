@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_map.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_object.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_objects.py"
+  "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_trafficLights.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_velAccel.py"
   "/home/sahil/DorleCo/devel/.private/av_messages/lib/python3/dist-packages/av_messages/msg/_wayPoint.py"
   "CMakeFiles/av_messages_generate_messages_py"

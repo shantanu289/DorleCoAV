@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "/home/sahil/DorleCo/devel/.private/av_messages/share/gennodejs/ros/av_messages/msg/map.js"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/gennodejs/ros/av_messages/msg/object.js"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/gennodejs/ros/av_messages/msg/objects.js"
+  "/home/sahil/DorleCo/devel/.private/av_messages/share/gennodejs/ros/av_messages/msg/trafficLights.js"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/gennodejs/ros/av_messages/msg/velAccel.js"
   "/home/sahil/DorleCo/devel/.private/av_messages/share/gennodejs/ros/av_messages/msg/wayPoint.js"
   "CMakeFiles/av_messages_generate_messages_nodejs"

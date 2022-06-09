@@ -64,6 +64,7 @@ CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.privat
 CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp
 CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp
 CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp
+CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp
 CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp
 CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/wayPoint.lisp
 
@@ -96,9 +97,9 @@ CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.privat
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp: /home/sahil/DorleCo/src/av_messages/msg/globalPlan.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point32.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp: /home/sahil/DorleCo/src/av_messages/msg/wayPoint.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/globalPlan.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point32.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from av_messages/globalPlan.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/globalPlan.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
@@ -114,55 +115,63 @@ CMakeFiles/av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.privat
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/localPlan.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/localPlan.lisp: /home/sahil/DorleCo/src/av_messages/msg/localPlan.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/localPlan.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point32.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/localPlan.lisp: /home/sahil/DorleCo/src/av_messages/msg/wayPoint.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/localPlan.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/localPlan.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point32.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from av_messages/localPlan.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/localPlan.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /home/sahil/DorleCo/src/av_messages/msg/map.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /home/sahil/DorleCo/src/av_messages/msg/object.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /home/sahil/DorleCo/src/av_messages/msg/laneDetections.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/share/std_msgs/msg/Int16.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /home/sahil/DorleCo/src/av_messages/msg/laneDetections.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /home/sahil/DorleCo/src/av_messages/msg/object.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp: /opt/ros/noetic/share/std_msgs/msg/String.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from av_messages/map.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/map.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /home/sahil/DorleCo/src/av_messages/msg/object.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/share/std_msgs/msg/Int16.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp: /opt/ros/noetic/share/std_msgs/msg/Int16.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from av_messages/object.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/object.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /home/sahil/DorleCo/src/av_messages/msg/objects.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /home/sahil/DorleCo/src/av_messages/msg/object.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/share/std_msgs/msg/Int16.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /home/sahil/DorleCo/src/av_messages/msg/object.msg
-/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp: /opt/ros/noetic/share/std_msgs/msg/String.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from av_messages/objects.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/objects.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
+
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp: /home/sahil/DorleCo/src/av_messages/msg/trafficLights.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp: /opt/ros/noetic/share/std_msgs/msg/Int16.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from av_messages/trafficLights.msg"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/trafficLights.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp: /home/sahil/DorleCo/src/av_messages/msg/velAccel.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from av_messages/velAccel.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from av_messages/velAccel.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/velAccel.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/wayPoint.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/wayPoint.lisp: /home/sahil/DorleCo/src/av_messages/msg/wayPoint.msg
 /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/wayPoint.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Point32.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from av_messages/wayPoint.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sahil/DorleCo/build/av_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from av_messages/wayPoint.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/sahil/DorleCo/src/av_messages/msg/wayPoint.msg -Iav_messages:/home/sahil/DorleCo/src/av_messages/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p av_messages -o /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg
 
 av_messages_generate_messages_lisp: CMakeFiles/av_messages_generate_messages_lisp
@@ -177,6 +186,7 @@ av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messag
 av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/map.lisp
 av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/object.lisp
 av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/objects.lisp
+av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/trafficLights.lisp
 av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/velAccel.lisp
 av_messages_generate_messages_lisp: /home/sahil/DorleCo/devel/.private/av_messages/share/common-lisp/ros/av_messages/msg/wayPoint.lisp
 av_messages_generate_messages_lisp: CMakeFiles/av_messages_generate_messages_lisp.dir/build.make

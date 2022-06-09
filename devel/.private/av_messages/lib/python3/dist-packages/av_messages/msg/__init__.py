@@ -9,5 +9,6 @@ from ._localPlan import *
 from ._map import *
 from ._object import *
 from ._objects import *
+from ._trafficLights import *
 from ._velAccel import *
 from ._wayPoint import *

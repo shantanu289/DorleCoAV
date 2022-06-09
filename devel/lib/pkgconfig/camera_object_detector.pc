@@ -1,0 +1,1 @@
+/home/sahil/DorleCo/devel/.private/camera_object_detector/lib/pkgconfig/camera_object_detector.pc

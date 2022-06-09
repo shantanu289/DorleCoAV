@@ -63,6 +63,7 @@ localPlan.msg
 map.msg
 object.msg
 objects.msg
+trafficLights.msg
 velAccel.msg
 wayPoint.msg
 )

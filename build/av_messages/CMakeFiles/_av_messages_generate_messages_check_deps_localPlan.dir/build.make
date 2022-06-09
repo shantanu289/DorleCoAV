@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/sahil/DorleCo/build/av_messages
 include CMakeFiles/_av_messages_generate_messages_check_deps_localPlan.dir/progress.make
 
 CMakeFiles/_av_messages_generate_messages_check_deps_localPlan:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py av_messages /home/sahil/DorleCo/src/av_messages/msg/localPlan.msg geometry_msgs/Point32:av_messages/wayPoint:std_msgs/Header
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py av_messages /home/sahil/DorleCo/src/av_messages/msg/localPlan.msg av_messages/wayPoint:std_msgs/Header:geometry_msgs/Point32
 
 _av_messages_generate_messages_check_deps_localPlan: CMakeFiles/_av_messages_generate_messages_check_deps_localPlan
 _av_messages_generate_messages_check_deps_localPlan: CMakeFiles/_av_messages_generate_messages_check_deps_localPlan.dir/build.make
