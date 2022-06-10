@@ -54,5 +54,3 @@ class Detector:
         '''
         the final publisher function
         '''
-
-        
