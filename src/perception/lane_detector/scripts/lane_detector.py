@@ -5,7 +5,7 @@ import rospy
 
 from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
-from av_messages.msg import depthandimage, trafficLights
+from av_messages.msg import depthandimage, lanes, laneDetections
 
 import numpy as np
 import math
@@ -17,7 +17,6 @@ class Detector:
         self.rgb_image = None
         self.depth_image = None
         
-
     def subscribeToTopics(self):
         rospy.loginfo("Subscribed to topics")
         rospy.Subscriber(self.image_topicname, depthandimage,
@@ -30,13 +29,12 @@ class Detector:
         self.image_topicname = rospy.get_param(
             "traffic_lights_detector/image_topic_name", "/camera/imagedata")
         self.pub_topic_name = rospy.get_param(
-            "traffic_lights_detector/traffic_lights_detections_topic_name", "/camera/trafficlightdetections")
+            "lane_detector/lane_detections_topic_name", "/camera/lanedetections")
     
-
     def publishToTopics(self):
         rospy.loginfo("Published to topics")
         self.DetectionsPublisher = rospy.Publisher(
-            self.pub_topic_name, trafficLights, queue_size=1)
+            self.pub_topic_name, laneDetections, queue_size=1)
 
     def storeImage(self, img):
         try:
@@ -48,7 +46,7 @@ class Detector:
     
     def callDetector(self):
         '''
-        Call traffic lights detector model related functions here (Reuben, Mayur)
+        Call lane detector model related functions here (Reuben, Mayur)
         and the final publish function (To be done by sahil)
         '''
 

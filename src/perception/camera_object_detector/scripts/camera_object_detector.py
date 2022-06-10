@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from sqlite3.dbapi2 import _Statement
 import cv2
 import rospy
 

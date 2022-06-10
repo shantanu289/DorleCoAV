@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-
 import rospy
-from camera_object_detector import Detector
+from lane_detector import Detector
 
 def main():
-    rospy.init_node('camera_object_detector')
+    rospy.init_node('lane_detector')
     detector = Detector()
     detector.subscribeToTopics()
     detector.publishToTopics()
